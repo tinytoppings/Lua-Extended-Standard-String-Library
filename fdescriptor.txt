@@ -1,0 +1,82 @@
+    FUNCTION: string.gfind
+    PARAMETERS:
+        (str: string, pattern: string, limit: integer?)
+    
+    RETURNS: ((function() end) -> (min: integer, max: integer, ...: string)) (ITERABLE)
+
+    -----------------------
+
+    FUNCTION: string.gsplit
+    PARAMETERS:
+        (str: string, delimiter: string, limit: integer?)
+    
+    RETURNS: ((function() end) -> (result: string)) (ITERABLE)
+
+    -----------------------
+
+    FUNCTIONS: string.starts, string.ends, string.contains
+    PARAMETERS:
+        (str: string, strB: string)
+    
+    RETURNS: boolean
+
+    -----------------------
+
+    FUNCTION: string.split
+    PARAMETERS:
+        (str: string, delimiter: string, limit: integer?)
+    
+    RETURNS: {...: string}
+
+    -----------------------
+
+    FUNCTION: string.switch, string.switchn
+    PARAMETERS:
+        (str: string, equate: string, retval: true)
+    
+    RETURNS: string
+
+    -----------------------
+
+    FUNCTION: string.eval
+    PARAMETERS:
+        (expr: boolean, retval: string, false_case: string?)
+    
+    RETURNS: string
+    
+    -----------------------
+
+    FUNCTION: string.spaces
+    PARAMETERS:
+        (str: string, mode: string, limit: integer?)
+                        ^
+                        |
+                        "*","*e",   or   "*s","*se",   or  "*t","*te",  or   "*n","*ne"
+                            ^                 ^                  ^                 ^
+                            (everything)      (spaces)            (tabs)             (newlines)
+    
+    RETURNS: string
+
+    -----------------------
+
+    FUNCTION: string.tableize
+    PARAMETERS:
+        (str: string)
+    
+    RETURNS: table
+
+    -----------------------
+
+    FUNCTION: string.count
+    PARAMETERS:
+        (str: string, pattern: string)
+    
+    RETURNS: integer
+
+    -----------------------
+
+    FUNCTIONS: string.blank, string.null
+    PARAMETERS:
+        (str: string)
+    
+    RETURNS: boolean
